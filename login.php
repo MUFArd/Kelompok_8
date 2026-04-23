@@ -1,24 +1,41 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit;
+$username_benar = "admin";
+$password_benar = "12345";
+
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if ($username == $username_benar && $password == $password_benar) {
+        $_SESSION['username'] = $username;
+        header("Location: dashboard.php");
+        exit;
+    } else {
+        echo "<script>alert('Username atau Password salah!');</script>";
+    }
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>Login</title>
 </head>
 <body>
 
-<h2>Dashboard</h2>
-<p>Selamat datang, <b><?php echo $_SESSION['username']; ?></b></p>
+<h2>Login</h2>
 
-<a href="profil.php">Ke Halaman Profil</a><br><br>
-<a href="logout.php">Logout</a>
+<form method="POST">
+    <label>Username:</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <button type="submit" name="login">Login</button>
+</form>
 
 </body>
 </html> 
