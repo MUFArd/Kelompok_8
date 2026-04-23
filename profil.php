@@ -23,4 +23,4 @@ if (!isset($_SESSION['username'])) {
 <a href="dashboard.php">Kembali ke Dashboard</a>
 
 </body>
-</html> profil
+</html> 
