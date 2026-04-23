@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "absen-siswa-469319",
+  "private_key_id": "65b79eb1a68e7a930b199fc8b0c9551f6d871512",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyVzfrF8HjQDgi\nV3oZCRSr2A7vC8wKnfbptNnOPGFlgyzcjZDxcatwK0mSdDaFlZcO0KLA5zy/A9c+\nB9hP4NETEgBXFjyO9Y3AyMxSBy1cis7J2+tw11CIE3rW0kyiznn5NlDDB2eqOiGq\nSHX0dRAzjbPQ7oG+44OsjOLudpHxj9U+NrWuD4wBvFCVQEPegSKLsPRtHZVXL1uB\ndPafSdmCI6ncO3Lfg+t8UuBxi402/+Q59nhCjbW/YKUWSasfm1DsTMiGxhvp4T2R\n0O4EN2sMgfUAAdpekQlJsB0rvd07tuLQYLUTnbxznEzlhPVQi2qkWMFlExOh6De9\nrLh0AjnhAgMBAAECggEADbLZXruCbxw9s5WYkVe7OL/t1brIP4CGuMjlegv1R0De\nL0rIeWNL0d/hVNiMX5Jv+flYpwycA+gdnmwn12rjZF2bnRTeLfT6oHZMC3j1qQgY\nfjTgTtibHPiyFNIuhMrrX5MmfPSSp+azM0tBlDdxuSQHTeMkIC+Fq7lerQZ6i11q\nGUPLec9pRb6n/mGq9M3JUxAlt/WMp07Sd4ANypcE+5Lh1M6CcRcJ+qIdzV8O3gDP\ncnRWaIzc4mhbuxSE70hlL9LnEOaWTL1s7wLDwV9Z2hevXpWJ+XQhd1KCBerSE8s6\nHZdW8BwPVqY2Cr7sfG943PLvkKGuJL2psbbOVN/0qQKBgQDiBaVS1BDfWdHEWWae\ny5/8noJXR8ctX1rfXcRfpmeW1A1L3CHQroABv8FFaaQKNN3yjkq5LkhEmA0UV5nV\nk9zgwRLyjwYxqs2q9yX95i1VLDgOjLvrRowAYi4umvgMJg6PvTkSDTZ3VzddQUGN\n+zh3b/xjZ8yuh+xXYmG5ORPCtwKBgQDJ/pl8Mm+eDYbJAKxRCeQxYFfEGEEeL5fG\nxufAb71cr+zMeLV9MKKGFDyOI9SU9O1Je3jZLE++SSHSrjKHV5oAr3E4vJKyCS9b\nDJixdT+5p6kgaQ5fbl1fYl9iY8ZTV3+LRyfQNifU/gGiMWKqzG05+N8jU1vQ5Baa\ng79ZXCzwJwKBgBj6vMHBtDerCpbjtoa4RG876XXR9f5auoVTLJ/RmUM/HlUS+B3D\nG1yWH7sXKM0D+L+U4EdFCTGjiFaGM/c5x0CDth9elTWqBd7uP6Gm7b2rDGr3PNGM\n0247a5U1BVL6ZcOXCxampS1dUz4YNzGE4UG5+6/UyfdECGfD9L7uwvNTAoGBALR2\ncTvjd5MWdJ/pqQmxs5xlfaPlI3BLhucBV5W2ftBrID1BbqvNIrZ1J/C5lDgMZl6r\nIDmufAP+JGisVtpR6nXISHgvCURkLlnC9Dw/C1Lbtp8NHNknqeYI5jzp9QsKdhnB\n1ZEQgR+qW11Dj+oWP1N2xCw0UihbTtJ2+CJm1oMrAoGAP0q4XRn6GwCXBTi3W1qK\nlH6/+93dQewHJ4d5NdkGQPU/ZjA2Alm9b6X0MxW/76NyqHlKdqNgTuKBopCmd4J/\nKgsTkaHgwyMzrGbkwXaT7PQ/KB10KiU8+Tv+doCSx748fV/y1WsMJMm3WZmngssm\npn233ZZZPpVZrfgcVTAgx10=\n-----END PRIVATE KEY-----\n",
+  "client_email": "absens-harian@absen-siswa-469319.iam.gserviceaccount.com",
+  "client_id": "110363853067526014428",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/absens-harian%40absen-siswa-469319.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

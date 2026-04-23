@@ -1,0 +1,60 @@
+{
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+{
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+2025-09-23 11:26:03 | {
+  "error": {
+    "code": 400,
+    "message": "Unable to parse range: Sheet1!A:D",
+    "errors": [
+      {
+        "message": "Unable to parse range: Sheet1!A:D",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+2025-09-23 11:27:44 | {
+  "error": {
+    "code": 400,
+    "message": "Unable to parse range: Sheet1!A:D",
+    "errors": [
+      {
+        "message": "Unable to parse range: Sheet1!A:D",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+

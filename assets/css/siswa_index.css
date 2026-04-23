@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 212, 212);
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    width: 10vw;
+    height: 96vh;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    row-gap: 3vh;
+    background-color: red;
+}
+
+aside h1 {
+    background-color: white;
+    width: 7vw;
+    font-size: 1.2vw;
+    color: red;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.bttn-wrapper {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 7vh;
+}
+
+aside button {
+    width: 80%;
+    max-width: 30%;
+    height: 6vh;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0.3vh;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1vw;
+    overflow: hidden;
+}
+
+aside div button span {
+    color: red ;
+    font-weight: 500;
+}
+
+aside .bttn-profil i,aside .bttn-absensi i {
+    margin-left: 1vw;
+    font-size: 1.3vw;
+    color: red;
+}
+
+aside button:hover {
+    scale: 1.1;
+}
+
+aside button.active {
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+aside button.active:hover {
+    scale: 1;
+}
+
+.bttn-logout {
+    justify-content: center;
+}
+
+.bttn-logout i {
+    font-size: 1.5vw;
+}
+
+
+
+
+.container {
+    width: 92vw;
+    height: 100vh;
+    position: relative;
+    left: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .content-absensi {
+    opacity: 0;
+    scale: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+.container .content-profil {
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .content-absensi.active {
+    opacity: 1;
+    scale: 1;
+}
+
+.container .content-profil.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-profil > span {
+    color: red;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+}
+
+.content-profil h1 {
+    color: red;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+}
+
+.content-profil .profil-user{
+    width: 35%;
+    height: 10vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5vh;
+    gap: 4vw;
+}
+.content-profil .profil-user img {
+    width: 4vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px black solid;
+    margin-left: 2vw;
+}
+
+.content-profil .profil-user h2 {
+    color: red;
+    font-size: 1.2vws;
+}
+
+.content-profil .profil-siswa {
+    width: 35%;
+    height: 45vh;
+    margin: 5vh 0 0 2vw;
+    padding-top: 5vh;
+    border-radius: 20px;
+    background-color: rgb(254, 140, 140);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content-profil .profil-siswa h1 {
+    width: 8vw;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: -1.5vh;
+    background-color: white;
+}
+
+.content-profil .profil-siswa .wrap {
+    margin: 1vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+    margin-bottom: 4vh;
+}
+
+.content-profil .profil-siswa .wrap span {
+    position: absolute;
+    top: -1vh;
+}
+
+.content-profil .profil-siswa .wrap span i{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2vh;
+    left: -1vw;
+    font-size: 1.4vw;
+    background-color:white;
+    color: red;
+    border-radius: 50%;
+}
+
+.content-profil .profil-siswa .wrap span b {
+    width: 5vw;
+    height: 3vh;
+    position: absolute;
+    top: -0.5vh;
+    left: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    color: red;
+    background-color: white;
+}
+
+
+.content-profil .profil-siswa .wrap h2 {
+    width: 80%;
+    font-size: 1.2vw;
+    background-color: red;
+    color: white;
+    height: 5vh;
+    display: flex;
+    align-items: end;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.content-profil .detail-user {
+    width: 35%;
+    height: 10vh;
+    margin: 4vh 0 0 2vw;
+    padding-top: 5vh;
+    border-radius: 20px;
+    background-color: rgb(254, 140, 140);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content-profil .detail-user h1 {
+    width: 8vw;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: -1.5vh;
+    background-color: white;
+}
+
+.content-profil .detail-user .wrap {
+    margin: 1vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+    margin-bottom: 4vh;
+}
+
+.content-profil .detail-user .wrap span {
+    position: absolute;
+    top: -1vh;
+}
+
+.content-profil .detail-user .wrap span i{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2vh;
+    left: -1vw;
+    font-size: 1.4vw;
+    background-color:white;
+    color: red;
+    border-radius: 50%;
+}
+
+.content-profil .detail-user .wrap span b {
+    width: 5vw;
+    height: 3vh;
+    position: absolute;
+    top: -0.5vh;
+    left: 1.5vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    color: red;
+    background-color: white;
+}
+
+
+.content-profil .detail-user .wrap h2 {
+    width: 80%;
+    font-size: 1.2vw;
+    background-color: red;
+    color: white;
+    height: 5vh;
+    display: flex;
+    align-items: end;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.content-profil .keterangan-waktu {
+    width: 35%;
+    height: 10vh;
+    margin: 4vh 0 0 2vw;
+    padding-top: 5vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    right: 8vw;
+}
+
+.content-profil .keterangan-waktu .wrap {
+    position: absolute;
+    bottom: 3vh;
+    left: 25%;
+}
+
+.content-profil .keterangan-waktu .wrap span {
+    color: red;
+    width:  25vw;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+}
+
+.content-profil .keterangan-waktu .wrap span i {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.5vh;
+    left: -1vw;
+    font-size: 1.5vw;
+    background-color:rgb(255, 212, 212);
+    color: red;
+    border-radius: 50%;
+}
+
+.content-profil .keterangan-waktu .wrap span h1{
+    width: 5vw;
+    height: 3vh;
+    margin-left: 2vw;
+    color: red;
+    font-size: 1.8vw;
+    position: relative;
+    top: 3vh;
+}
+
+
+.content-profil .keterangan-waktu .wrap span h2{
+    width: 9vw;
+    height: 3vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 1.3vw;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+.content-profil .keterangan-waktu .wrap span h3{
+    width: 9vw;
+    height: 3vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 1.3vw;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.content-profil .total-kehadiran {
+    width: 35%;
+    height: 45vh;
+    margin: 7vh 0 0 2vw;
+    padding-top: 5vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(254, 140, 140);
+}
+
+.content-profil .total-kehadiran h1 {
+    width: 8vw;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: -1.5vh;
+    background-color: white;
+}
+
+.content-profil .total-kehadiran .wrap {
+    margin: 1vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+    margin-bottom: 4vh;
+}
+
+.content-profil .total-kehadiran .wrap span {
+    position: absolute;
+    top: -1vh;
+}
+
+.content-profil .total-kehadiran .wrap span i{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2vh;
+    left: -1vw;
+    font-size: 1.4vw;
+    background-color:white;
+    color: red;
+    border-radius: 50%;
+}
+
+.content-profil .total-kehadiran .wrap span b {
+    width: 4vw;
+    height: 3vh;
+    position: absolute;
+    top: -0.5vh;
+    left: 1.5vw;
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    color: red;
+    background-color: white;
+}
+.content-profil .total-kehadiran .wrap:nth-child(5) span b {
+    width: 12vw;
+}
+
+
+.content-profil .total-kehadiran .wrap h2 {
+    width: 80%;
+    height: 10vh;
+    font-size: 1.2vw;
+    background-color: red;
+    color: white;
+    height: 5vh;
+    display: flex;
+    align-items: end;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.content-profil .status {
+    width: 35%;
+    height: 10vh;
+    margin: 4vh 0 0 2vw;
+    padding-top: 5vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(254, 140, 140);
+}
+
+.content-profil .status h1 {
+    width: 10vw;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: -1.5vh;
+    background-color: white;
+}
+
+.content-profil .status .wrap {
+    margin: 1vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+    margin-bottom: 4vh;
+}
+
+.content-profil .status .wrap span {
+    position: absolute;
+    top: -1vh;
+}
+
+.content-profil .status .wrap span i{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2vh;
+    left: -1vw;
+    font-size: 1.4vw;
+    background-color:white;
+    color: red;
+    border-radius: 50%;
+}
+
+.content-profil .status .wrap span b {
+    width: 8vw;
+    height: 3vh;
+    position: absolute;
+    top: -0.5vh;
+    left: 1.5vw;
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    color: red;
+    background-color: white;
+}
+
+.content-profil .status .wrap h2 {
+    width: 80%;
+    height: 10vh;
+    font-size: 1.2vw;
+    background-color: red;
+    color: white;
+    height: 5vh;
+    display: flex;
+    align-items: end;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.content-absensi > span {
+    color: red;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+}
+
+.content-absensi h1 {
+    color: red;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+}
+
+ table {
+    width: 83vw;
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    border-collapse: collapse;
+    margin-top: 2vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 1vh;
+    text-align: center;
+}
+
+table .header_row {
+    background-color: rgb(255, 0, 0);
+    font-weight: 700;
+    color: white;
+}
+
+table .header_row .no_row {
+    width: 5%;
+}
+table .header_row .tanggal_row {
+    width: 15%;
+}
+table .header_row .jam_row {
+    width: 12%;
+}
+
+table .header_row .status_row {
+    width: 10%;
+}
+
+table tr:nth-child(1) {
+    background-color: rgb(255, 0, 0) !important;
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+}
+
+table .header_row {
+    border: 1px solid black;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+table tr:nth-child(odd) {
+    background-color: rgb(226, 226, 226);
+}
+
+table tr td a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+}
+
+table tr td a:hover {
+    color: rgb(242, 123, 123);
+ 
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: block;
+
+}
+
+#scanner-modal {
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reader-wrapper {
+    width: 100vw;
+    height: 50vh;
+}
+#reader {
+    width: 100%;
+
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(0.9);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+    
+}
+
+button:active {
+    animation:buttonAnimation 1s ease-in-out ;
+}
+img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    border-radius: 50%; 
+    background-color: rgb(160, 195, 255); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+h1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+i {
+    height: 100%;
+    color: rgb(249, 197, 53);
+    position: relative;
+    bottom: 0.5vh;}
+
+}
